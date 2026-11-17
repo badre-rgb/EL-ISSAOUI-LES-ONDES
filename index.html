@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QCM de physique - pages 2 à 4 du cours de 2BAC.">
+  <title>QCM Physique | Prof. Hamza El Issaoui</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">HE</div>
+    <div>
+      <p class="eyebrow">PHYSIQUE · 2 BAC</p>
+      <h1>QCM d'entraînement</h1>
+      <p class="teacher">Professeur : <strong>Hamza El Issaoui</strong></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro-card">
+      <div>
+        <span class="tag">100 QUESTIONS</span>
+        <h2>Les questions qui se posent au physicien & les ondes</h2>
+        <p>QCM basé sur les pages 2 à 4 du support de cours fourni.</p>
+      </div>
+      <div class="intro-icon" aria-hidden="true">〰</div>
+    </section>
+
+    <section class="stats" aria-label="Progression du QCM">
+      <div class="stat"><span class="stat-label">Question</span><strong id="question-count">1 / 100</strong></div>
+      <div class="stat"><span class="stat-label">Score</span><strong id="score">0</strong></div>
+      <div class="stat"><span class="stat-label">Réponses</span><strong id="answered">0 / 100</strong></div>
+    </section>
+
+    <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+
+    <section class="quiz-card" id="quiz-card">
+      <div class="question-meta">
+        <span id="topic-label">PHYSIQUE</span>
+        <span id="question-number">QUESTION 01</span>
+      </div>
+      <h2 id="question-text">Chargement de la question…</h2>
+      <div id="options" class="options"></div>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+      <div class="actions">
+        <button id="next-btn" class="btn btn-primary" disabled>Question suivante <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="result-card" class="result-card hidden">
+      <div class="result-symbol">✓</div>
+      <p class="eyebrow">QCM TERMINÉ</p>
+      <h2>Votre résultat</h2>
+      <p class="result-score"><span id="final-score">0</span><small> / 100</small></p>
+      <p id="result-message"></p>
+      <button id="restart-btn" class="btn btn-primary">Recommencer le QCM ↻</button>
+    </section>
+
+    <footer>
+      <span>Préparé pour les élèves de 2 BAC</span>
+      <span>Prof. Hamza El Issaoui</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
